@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --cinza: #c9d1d3;
+    --branco: #f7f7f7;
+    --azul: #9dd3df;
+    --preto: #3b3737;
+    --vermelho: #991818;
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--preto);
+    background-color: #f0f0f0; /* Adicionei uma cor de fundo mais suave */
+}
+
+.container {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto; /* Centralizei o container */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modo-botoes button {
+    background-color: var(--vermelho);
+    color: #fff;
+    padding: 12px; /* Aumentei o padding para destacar mais */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px; /* Aumentei o tamanho da fonte */
+    transition: background-color 0.3s ease; /* Adicionei uma transição suave */
+}
+
+.modo-botoes button:hover {
+    background-color: #841616;
+}
+
+.dados {
+    margin-top: 20px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 14px; /* Ajustei o tamanho da fonte para uma aparência mais leve */
+}
+
+input {
+    padding: 10px; /* Reduzi o padding para um visual mais compacto */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cinza);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease; /* Adicionei uma transição suave para a borda */
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--vermelho); /* Destaque na borda ao focar no input */
+}
+
+button {
+    background-color: var(--vermelho);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #841616;
+}
+
+.avatar-container {
+    position: relative;
+    width: 120px; /* Aumentei o tamanho do contêiner da imagem */
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#avatar {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%; /* Garante que a imagem seja circular */
+    transition: transform 0.3s ease; /* Adiciona uma transição sutil ao ampliar */
+}
+
+#avatar:hover {
+    transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
+}
+
+#uploadAvatar {
+    display: none;
+}
